@@ -14,13 +14,14 @@ namespace Microsoft.ML.Forecasting.GlobalTemperature
 
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("Demo for unknown dates: ");
-            
-            //year, month
-            new CustomPrediction().Header().Run(2020, 7);
-            new CustomPrediction().Run(2030, 7);
-            new CustomPrediction().Run(2040, 7);
-            new CustomPrediction().Run(2050, 7);
+            Console.WriteLine("Demo for unknown temperatures and dates: ");
+
+            // Run a prediction for future global temperatures in April
+            // Year, Month
+            new CustomPrediction().Header().Run(2020, 4);
+            new CustomPrediction().Run(2030, 4);
+            new CustomPrediction().Run(2040, 4);
+            new CustomPrediction().Run(2050, 4);
 
             // Only close the console when pressing a key
             Console.WriteLine();
